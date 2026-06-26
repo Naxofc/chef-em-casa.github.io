@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chef em Casa — Cozinhe em 15 minutos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <header>
+    <a href="#inicio" class="logo">Chef <span>em Casa</span></a>
+    <nav>
+      <a href="#filtros">Filtros</a>
+      <a href="#receitas">Receitas</a>
+      <a href="#como-funciona">Como Funciona</a>
+      <a href="#contato">Contato</a>
+      <a href="#economia" class="btn-nav">Minha Economia</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero-conteudo">
+        <span class="hero-badge">⏱️ Tudo pronto em até 15 minutos</span>
+        <h1>Cozinhe <em>rápido,</em><br>economize e<br>descanse.</h1>
+        <p>Receitas práticas para estudantes e jovens profissionais que querem comer bem sem gastar horas na cozinha ou uma fortuna no delivery.</p>
+        <div class="barra-busca">
+          <input type="search" placeholder="Busque por ingrediente ou receita..." aria-label="Buscar receitas"/>
+          <button type="submit">Buscar 🔍</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>+320</strong><span>Receitas em 15 min</span></div>
+          <div class="hero-stat"><strong>R$8</strong><span>Custo médio por prato</span></div>
+          <div class="hero-stat"><strong>1 panela</strong><span>Foco em pouca louça</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-img" src="img/macarrao-alho-oleo.png" alt="Prato de macarrão ao alho e óleo"/>
+      </div>
+    </section>
+
+    <section class="secao-filtros" id="filtros">
+      <p class="secao-rotulo">Atalhos inteligentes</p>
+      <h2>O que você precisa agora?</h2>
+      <div class="filtros-grade">
+        <a href="#receitas" class="filtro-card"><span class="filtro-icone">⏱️</span><strong>Até 15 minutos</strong><p>Receitas cronometradas para a sua fome</p></a>
+        <a href="#receitas" class="filtro-card"><span class="filtro-icone">🍳</span><strong>Uma panela só</strong><p>Mínimo de louça, máximo de sabor</p></a>
+        <a href="#receitas" class="filtro-card"><span class="filtro-icone">🛒</span><strong>Ingredientes básicos</strong><p>Só o que já tem na despensa</p></a>
+        <a href="#receitas" class="filtro-card"><span class="filtro-icone">💰</span><strong>Até R$ 10</strong><p>Comer bem sem esvaziar a carteira</p></a>
+        <a href="#receitas" class="filtro-card"><span class="filtro-icone">🥩</span><strong>Proteína rápida</strong><p>Frango, ovo e atum em versão express</p></a>
+        <a href="#receitas" class="filtro-card"><span class="filtro-icone">🥗</span><strong>Leve e saudável</strong><p>Sem ultraprocessados, sem culpa</p></a>
+      </div>
+    </section>
+
+    <section class="secao-receitas" id="receitas">
+      <div class="secao-cabecalho">
+        <div>
+          <p class="secao-rotulo">🚨 Salva-Vidas da semana</p>
+          <h2>As mais rápidas e mais baratas agora</h2>
+        </div>
+        <a href="#receitas" class="link-ver-todas">Ver todas as receitas →</a>
+      </div>
+
+      <div class="receitas-grade">
+
+        <!-- Cartão 1 — Link para a página da receita -->
+        <a href="receitas/macarrao-alho-oleo.html" class="receita-card">
+          <img class="receita-img" src="img/macarrao-alho-oleo.png" alt="Macarrão ao Alho e Óleo"/>
+          <div class="receita-corpo">
+            <div class="receita-tags">
+              <span class="tag tag-tempo">⏱ 12 min</span>
+              <span class="tag tag-loucca">🍳 1 panela</span>
+              <span class="tag tag-tipo">Massa</span>
+            </div>
+            <h3>Macarrão ao Alho e Óleo</h3>
+            <p class="receita-preco">💚 Custou apenas R$ 6,00/pessoa</p>
+          </div>
+        </a>
+
+        <!-- Cartão 2 -->
+        <a href="receitas/omelete-queijo-ervas.html" class="receita-card">
+          <img class="receita-img" src="img/omelete-queijo-ervas.png" alt="Omelete de Queijo e Ervas"/>
+          <div class="receita-corpo">
+            <div class="receita-tags">
+              <span class="tag tag-tempo">⏱ 8 min</span>
+              <span class="tag tag-loucca">🍳 1 frigideira</span>
+              <span class="tag tag-tipo">Proteína</span>
+            </div>
+            <h3>Omelete de Queijo e Ervas</h3>
+            <p class="receita-preco">💚 Custou apenas R$ 4,50/pessoa</p>
+          </div>
+        </a>
+
+        <!-- Cartão 3 -->
+        <a href="receitas/arroz-frigideira-atum.html" class="receita-card">
+          <img class="receita-img" src="img/arroz-frigideira-atum.png" alt="Arroz de Frigideira com Atum"/>
+          <div class="receita-corpo">
+            <div class="receita-tags">
+              <span class="tag tag-tempo">⏱ 15 min</span>
+              <span class="tag tag-loucca">🍳 1 panela</span>
+              <span class="tag tag-tipo">Arroz</span>
+            </div>
+            <h3>Arroz de Frigideira com Atum</h3>
+            <p class="receita-preco">💚 Custou apenas R$ 8,00/pessoa</p>
+          </div>
+        </a>
+
+        <!-- Cartão 4 -->
+        <a href="receitas/sanduiche-natural.html" class="receita-card">
+          <img class="receita-img" src="img/sanduiche-natural.png" alt="Sanduíche Natural Proteico"/>
+          <div class="receita-corpo">
+            <div class="receita-tags">
+              <span class="tag tag-tempo">⏱ 5 min</span>
+              <span class="tag tag-loucca">🍽 Sem louça</span>
+              <span class="tag tag-tipo">Lanche</span>
+            </div>
+            <h3>Sanduíche Natural Proteico</h3>
+            <p class="receita-preco">💚 Custou apenas R$ 5,00/pessoa</p>
+          </div>
+        </a>
+
+        <!-- Cartão 5 -->
+        <a href="receitas/frango-grelhado-limao.html" class="receita-card">
+          <img class="receita-img" src="img/frango-grelhado-limao.png" alt="Frango Grelhado com Limão"/>
+          <div class="receita-corpo">
+            <div class="receita-tags">
+              <span class="tag tag-tempo">⏱ 10 min</span>
+              <span class="tag tag-loucca">🍳 1 frigideira</span>
+              <span class="tag tag-tipo">Proteína</span>
+            </div>
+            <h3>Frango Grelhado com Limão</h3>
+            <p class="receita-preco">💚 Custou apenas R$ 9,00/pessoa</p>
+          </div>
+        </a>
+
+        <!-- Cartão 6 -->
+        <a href="receitas/macarrao-cremoso-tomate.html" class="receita-card">
+          <img class="receita-img" src="img/macarrao-cremoso-tomate.png" alt="Macarrão Cremoso de Tomate"/>
+          <div class="receita-corpo">
+            <div class="receita-tags">
+              <span class="tag tag-tempo">⏱ 13 min</span>
+              <span class="tag tag-loucca">🍳 1 panela</span>
+              <span class="tag tag-tipo">Massa</span>
+            </div>
+            <h3>Macarrão Cremoso de Tomate</h3>
+            <p class="receita-preco">💚 Custou apenas R$ 7,00/pessoa</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="secao-calculadora" id="economia">
+      <div class="calc-layout">
+        <div class="calc-texto">
+          <p class="secao-rotulo">💸 Calculadora de Economia</p>
+          <h2>Quanto você já economizou hoje?</h2>
+          <p>Cada refeição feita em casa é um passo contra os R$ 35–60 do delivery.</p>
+          <ul class="calc-lista">
+            <li>✅ Delivery médio: R$ 42,00 por pedido</li>
+            <li>✅ Receita Chef em Casa: R$ 7,00 por prato</li>
+            <li>✅ Economia por refeição: ≈ R$ 35,00</li>
+          </ul>
+        </div>
+        <div class="calc-caixa">
+          <label class="campo-label" for="dias">Quantos dias por mês você cozinhou em casa?</label>
+          <input class="campo-input" type="number" id="dias" placeholder="Ex: 20" min="1" max="31" oninput="calcular()"/>
+          <label class="campo-label" for="refeicoes">Quantas refeições por dia?</label>
+          <input class="campo-input" type="number" id="refeicoes" placeholder="Ex: 2" min="1" max="5" oninput="calcular()"/>
+          <div class="calc-resultado">
+            <span class="calc-valor" id="resultado">R$ 0,00</span>
+            <p>economizados esse mês ao cozinhar em casa 🎉</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-como" id="como-funciona">
+      <p class="secao-rotulo">Simples assim</p>
+      <h2>Como o Chef em Casa funciona</h2>
+      <div class="passos">
+        <div class="passo"><div class="passo-numero">1</div><h3>Escolha seu filtro</h3><p>Diga quanto tempo tem, quantos utensílios quer sujar e quanto quer gastar.</p></div>
+        <div class="passo"><div class="passo-numero">2</div><h3>Veja as opções</h3><p>Um grid visual com foto, tempo e nível de louça em cada card. Zero enrolação.</p></div>
+        <div class="passo"><div class="passo-numero">3</div><h3>Siga o passo a passo</h3><p>Texto simples e direto, fácil de seguir no celular enquanto cozinha.</p></div>
+        <div class="passo"><div class="passo-numero">4</div><h3>Registre sua economia</h3><p>Salve receitas favoritas e veja quanto economizou em relação ao delivery.</p></div>
+      </div>
+    </section>
+
+    <section class="secao-contato" id="contato">
+      <p class="secao-rotulo">📬 Fale conosco</p>
+      <h2>Entre em contato</h2>
+      <div class="contato-layout">
+        <div class="contato-texto">
+          <p>Tem uma receita rápida para sugerir? Encontrou algum problema no site? Manda uma mensagem para a gente!</p>
+          <p>Respondemos em até 48 horas. Sua sugestão pode virar a próxima receita Salva-Vidas da semana. 🍳</p>
+        </div>
+        <div class="formulario-caixa">
+          <div class="grupo-campo"><label for="nome">Nome</label><input type="text" id="nome" name="nome" placeholder="Seu nome completo" required/></div>
+          <div class="grupo-campo"><label for="email">E-mail</label><input type="email" id="email" name="email" placeholder="seu@email.com" required/></div>
+          <div class="grupo-campo">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+              <option value="">Selecione um assunto</option>
+              <option value="sugestao">Sugestão de receita</option>
+              <option value="problema">Reportar problema</option>
+              <option value="parceria">Parceria</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <div class="grupo-campo"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea></div>
+          <button class="btn-enviar" type="submit">Enviar Mensagem ✉️</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="rodape-layout">
+      <div class="rodape-marca">
+        <a href="#inicio" class="logo">Chef <span>em Casa</span></a>
+        <p>Feito para quem tem fome, mas não tem tempo. Coma bem, gaste pouco e suje pouca louça.</p>
+      </div>
+      <div class="rodape-coluna">
+        <h4>Receitas</h4>
+        <ul>
+          <li><a href="#receitas">Massas rápidas</a></li>
+          <li><a href="#receitas">Proteínas</a></li>
+          <li><a href="#receitas">Lanches</a></li>
+          <li><a href="#receitas">Saladas</a></li>
+        </ul>
+      </div>
+      <div class="rodape-coluna">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#filtros">Filtros</a></li>
+          <li><a href="#economia">Minha Economia</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rodape-base">
+      <p>© 2026 Chef em Casa. Projeto acadêmico — Web Design (Projeto de Bloco)</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    function calcular() {
+      var dias = parseFloat(document.getElementById('dias').value) || 0;
+      var refeicoes = parseFloat(document.getElementById('refeicoes').value) || 0;
+      var total = dias * refeicoes * 35;
+      document.getElementById('resultado').textContent = 'R$ ' + total.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+  </script>
+
+</body>
+</html>
